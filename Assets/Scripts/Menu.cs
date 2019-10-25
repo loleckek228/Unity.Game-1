@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public Animator AuthorsAnimator;
+	[SerializeField] private Animator AuthorsAnimator;
 
     public void Play()
     {

@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 3193084823439647798}
   - component: {fileID: 7739170025149796589}
   m_Layer: 0
-  m_Name: crystal 1
-  m_TagString: gold
+  m_Name: Gold
+  m_TagString: Gold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
