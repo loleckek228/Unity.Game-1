@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class BallMovement : MonoBehaviour
 {
-
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
 

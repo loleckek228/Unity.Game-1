@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HorizontalMovement : MonoBehaviour
 {
-    public float Speed;
+	[SerializeField] private float Speed;
     
     private void Update()
     {
