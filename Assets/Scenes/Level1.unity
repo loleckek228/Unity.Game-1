@@ -837,7 +837,7 @@ PrefabInstance:
     - target: {fileID: 970745975891316964, guid: 8e425fd213d2d4a17b2944573baf52d8,
         type: 3}
       propertyPath: m_Name
-      value: backGround2
+      value: BackGround2
       objectReference: {fileID: 0}
     - target: {fileID: 970745975891316964, guid: 8e425fd213d2d4a17b2944573baf52d8,
         type: 3}
@@ -1204,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 970745975891316964, guid: 8e425fd213d2d4a17b2944573baf52d8,
         type: 3}
       propertyPath: m_Name
-      value: backGround1
+      value: BackGround1
       objectReference: {fileID: 0}
     - target: {fileID: 970745975891316964, guid: 8e425fd213d2d4a17b2944573baf52d8,
         type: 3}
