@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class GoldStorage : MonoBehaviour
 {
-	[SerializeField] private Text _sumOfGold;
+	[SerializeField] private Text _countOfGold;
 	[SerializeField] private float _countOfGoldLabel;
 
     private void Start()
     {
-		_sumOfGold.text = "Points: " + _countOfGoldLabel;
+		PrintText(_countOfGold, _countOfGoldLabel);
     }
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +19,12 @@ public class GoldStorage : MonoBehaviour
 		{
 			Destroy(collision.gameObject);
 			_countOfGoldLabel++;
-			_sumOfGold.text = "Points: " + _countOfGoldLabel;
+			PrintText(_countOfGold, _countOfGoldLabel);
 		}
+	}
+
+    private void PrintText(Text text, float gold)
+	{
+		text.text = "Points: " + gold;
 	}
 }

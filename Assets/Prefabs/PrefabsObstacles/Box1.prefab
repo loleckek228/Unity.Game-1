@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8201754486324161360}
   - component: {fileID: 8884614642738510398}
   - component: {fileID: -7675071424599200414}
+  - component: {fileID: 5487296844227698366}
   m_Layer: 0
   m_Name: Box1
   m_TagString: Obstacles
@@ -121,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b1af8b3e45a41878b1856a740e25e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 5
 --- !u!50 &-7675071424599200414
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +144,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5487296844227698366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950218188900214593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a974669dae1ce41b19e399dd4a7c4769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

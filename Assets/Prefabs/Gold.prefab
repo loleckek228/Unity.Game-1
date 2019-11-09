@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6178327629376492868}
   - component: {fileID: 3193084823439647798}
   - component: {fileID: 7739170025149796589}
+  - component: {fileID: 8931675282761016565}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Gold
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b1af8b3e45a41878b1856a740e25e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 4
 --- !u!50 &3193084823439647798
 Rigidbody2D:
   serializedVersion: 4
@@ -168,3 +169,15 @@ PolygonCollider2D:
       - {x: 0.026666667, y: -0.26666668}
       - {x: 0.060000002, y: -0.22333334}
       - {x: 0.29000002, y: 0.053333335}
+--- !u!114 &8931675282761016565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488972329589899418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a974669dae1ce41b19e399dd4a7c4769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

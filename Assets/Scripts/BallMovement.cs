@@ -18,7 +18,9 @@ public class BallMovement : MonoBehaviour
  
     private void Update()
     {
-        transform.Translate(Vector3.right * _speed * Time.deltaTime);
+		float directionX = Input.GetAxis("Horizontal");
+
+		_rigidbody2D.velocity = new Vector2(directionX * _speed, _rigidbody2D.velocity.y);
         
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {

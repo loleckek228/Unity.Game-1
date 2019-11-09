@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class RemoveObjects : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Gold"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
+	private float _border = -15f;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Obstacles"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
+    private void Update()
+	{
+        if (transform.position.y < _border || transform.position.x < _border)
+		{
+			Destroy(gameObject);
+		}
+	}
 }
