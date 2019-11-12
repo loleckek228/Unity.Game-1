@@ -3,37 +3,32 @@ using UnityEngine;
 
 public class SpawnGold : MonoBehaviour
 {
-	[SerializeField] private GameObject _gold;
-	private bool _isReadyToSpawn;
-	private bool _isPauseOfSpawnGold;
+    [SerializeField] private GameObject _gold;
 
-	private void Start()
-	{
-		StartCoroutine(WaiterBetweenSpawn());
-	}
+    private void Start()
+    {
+        StartCoroutine(WaiterBetweenSpawn());
+    }
 
-	private IEnumerator WaiterToSpawn()
-	{
-		yield return new WaitForSeconds(5);
-		StartCoroutine(WaiterBetweenSpawn());
-	}
+    private IEnumerator WaiterToSpawn()
+    {
+        yield return new WaitForSeconds(5);
+        StartCoroutine(WaiterBetweenSpawn());
+    }
 
-	private IEnumerator WaiterBetweenSpawn()
-	{
-		float _countOfSpawn = 0;
+    private IEnumerator WaiterBetweenSpawn()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            yield return new WaitForSeconds(0.2f);
+            Spawn();
+        }
 
-		while (_countOfSpawn < 5)
-		{
-			yield return new WaitForSeconds(0.2f);
-			Spawn();
-			_countOfSpawn++;
-		}
+        StartCoroutine(WaiterToSpawn());
+    }
 
-		StartCoroutine(WaiterToSpawn());
-	}
-
-	private void Spawn()
-	{
-		Instantiate(_gold, transform.position, Quaternion.identity);
-	}
+    private void Spawn()
+    {
+        Instantiate(_gold, transform.position, Quaternion.identity);
+    }
 }

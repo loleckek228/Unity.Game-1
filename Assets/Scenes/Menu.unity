@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa87f8dd6d604a9082fafc20725580e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AuthorsAnimator: {fileID: 1945973997}
+  _authorsAnimator: {fileID: 1945973997}
 --- !u!1 &1560279388
 GameObject:
   m_ObjectHideFlags: 0

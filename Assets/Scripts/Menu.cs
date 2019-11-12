@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-	[SerializeField] private Animator AuthorsAnimator;
+    [SerializeField] private Animator _authorsAnimator;
 
     public void Play()
     {
@@ -14,11 +14,11 @@ public class Menu : MonoBehaviour
 
     public void Authors()
     {
-        AuthorsAnimator.SetBool("isOpen", !AuthorsAnimator.GetBool("isOpen"));
+        _authorsAnimator.SetBool("isOpen", !_authorsAnimator.GetBool("isOpen"));
     }
 
     public void Exit()
     {
         Application.Quit();
-    }    
+    }
 }

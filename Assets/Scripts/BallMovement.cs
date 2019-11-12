@@ -10,18 +10,18 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private float _jumpForce;
 
     private Rigidbody2D _rigidbody2D;
-    
+
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-	}
- 
+    }
+
     private void Update()
     {
-		float directionX = Input.GetAxis("Horizontal");
+        float directionX = Input.GetAxis("Horizontal");
 
-		_rigidbody2D.velocity = new Vector2(directionX * _speed, _rigidbody2D.velocity.y);
-        
+        _rigidbody2D.velocity = new Vector2(directionX * _speed, _rigidbody2D.velocity.y);
+
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
@@ -31,5 +31,5 @@ public class BallMovement : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
-    }    
+    }
 }

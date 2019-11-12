@@ -529,8 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff080d9303b84b82b218a535f0f047d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _countOfGold: {fileID: 1917534120}
-  _countOfGoldLabel: 0
+  _goldCount: {fileID: 1917534120}
+  _goldLabelCount: 0
 --- !u!1 &500692064
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6548da618b1e2452191fccdf3b496732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RandomObjectsToSpawn:
+  _randomObjectsToSpawn:
   - {fileID: 4167888528354798411, guid: 528168ed0736a4785bff1ae723da7363, type: 3}
   - {fileID: 1258485641316206533, guid: 41139742af8f5441c9297c0657564b34, type: 3}
   - {fileID: 8794047513006677087, guid: 7c8d22dcc101b49c78179a7bbfdb57bd, type: 3}
@@ -582,8 +582,8 @@ MonoBehaviour:
   - {fileID: 7950218188900214593, guid: 39f689da059bc4dbab418f68d30e1df1, type: 3}
   - {fileID: 516239888196220093, guid: 8baff4464006f43629e4e88b8fb3487b, type: 3}
   - {fileID: 6125657695709443103, guid: d4d6e212cdef34efe920d21557359a13, type: 3}
-  MinDelay: 1
-  MaxDelay: 3
+  _minDelay: 1.5
+  _maxDelay: 3.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
