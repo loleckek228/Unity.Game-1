@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyObjects : MonoBehaviour
+public class PlaygroundBorder : MonoBehaviour
 {
     private float _border = -15f;
 
