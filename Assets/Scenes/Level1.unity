@@ -220,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196678688}
-  - component: {fileID: 196678689}
+  - component: {fileID: 196678687}
   m_Layer: 0
   m_Name: GoldSpawner
   m_TagString: Untagged
@@ -228,6 +228,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &196678687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196678686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55259c61921ac4949bd016d92316212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _templates:
+  - {fileID: 7488972329589899418, guid: bf8c042f85d7f40628268f0555792063, type: 3}
+  _minDelay: 5
+  _maxDelay: 5
 --- !u!4 &196678688
 Transform:
   m_ObjectHideFlags: 0
@@ -242,23 +258,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &196678689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196678686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6548da618b1e2452191fccdf3b496732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _templates:
-  - {fileID: 7488972329589899418, guid: bf8c042f85d7f40628268f0555792063, type: 3}
-  _minDelay: 5
-  _maxDelay: 5
-  _isGold: 1
 --- !u!1 &239850718
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +587,6 @@ MonoBehaviour:
   - {fileID: 6125657695709443103, guid: d4d6e212cdef34efe920d21557359a13, type: 3}
   _minDelay: 1.5
   _maxDelay: 3.5
-  _isGold: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

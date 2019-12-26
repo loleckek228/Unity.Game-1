@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Renderer))]
+
 public class ScrollingBackground : MonoBehaviour
 {
     private Renderer _renderer;
